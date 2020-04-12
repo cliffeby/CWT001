@@ -122,9 +122,9 @@ For 2018, this resulted in an 82-record dataset.
 
 Additionally, I wanted to know how many occurred at 4-quad gates and how many were in quiet zones and or had constant warning devices.   These data are not recorded in the accident report but are part of the crossing inventory.  FRA provides a tool to download a specific crossing by its Id, but you have a large list, it is a tedious process to enter and scan each report for the desired features.
 
-To automate the process, the FRA Developer website https://safetydata.fra.dot.gov/MasterWebService/PublicApi has an API to access crossing inventory.  At present and from the samples offered, I found most of them limited in the number of crossings that could be returned in any one request.  The single crossing API worked well and returned a JSON object of all that crossing’s fields.
+To automate the process, the FRA Developer website [https://safetydata.fra.dot.gov/MasterWebService/PublicApi](https://safetydata.fra.dot.gov/MasterWebService/PublicApi) has an API to access crossing inventory.  At present and from the samples offered, I found most of them limited in the number of crossings that could be returned in any one request.  The single crossing API worked well and returned a JSON object of all that crossing’s fields.
 
-To use the API, you need to have a free FRA account and a token.  https://safetydata.fra.dot.gov/MasterWebService/PublicApi/Tokens
+To use the API, you need to have a free FRA account and a token.  [https://safetydata.fra.dot.gov/MasterWebService/PublicApi/Tokens](https://safetydata.fra.dot.gov/MasterWebService/PublicApi/Tokens)
 
 For this specific task statement, I am querying the inventory database and looping through a list of crossings.  I extract these data for each:
 -	the number of gates,
@@ -138,6 +138,7 @@ Python code below with comments.  Formatting the variable 'token' was the only t
 Each request has a 10 to 15-second cycle.  If you have a large number of crossings, be sure to check your sleep settings. 
 
 Other respurces:
+
 Crossing Field/Metadata Definitions:[https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings](https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings)
 Crossing Accident Field Definitions: {https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx
 }(https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx)
