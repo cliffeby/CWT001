@@ -138,9 +138,9 @@ Python code below with comments.  Formatting the variable 'token' was the only t
 Each request has a 10 to 15-second cycle.  If you have a large number of crossings, be sure to check your sleep settings. 
 
 Other respurces:
-Crossing Field/Metadata Definitions: https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings
-Crossing Accident Field Definitions: https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx
-
+Crossing Field/Metadata Definitions:[https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings](https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings)
+Crossing Accident Field Definitions: {https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx
+}(https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx)
 
 
 ```python
@@ -212,13 +212,13 @@ Expected Output
     
 ## Appendix B Resources
 Crossing Field/Metadata Definitions: 
-https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings 
+[https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings ](https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings )
 
 Crossing Accident Field Definitions:    
-https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx
+[https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx](https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx)
 
 Activation Failure database
-https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/affp/AfBrowse.aspx
+[https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/affp/AfBrowse.aspx](https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/affp/AfBrowse.aspx)
 
 Illinois High-Speed Rail
 Hellman, Adrian & Ngamdung, Tashi. (2010). Illinois High-Speed Rail Four-Quadrant Gate Reliability Assessment.
