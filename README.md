@@ -41,27 +41,23 @@ Step 4:  Open a file for writing/output and write header row.
 
 Step 5: Loop through the Id list calling the API and extracting the following fields from the JSON object:
 
-Field Name
-Values
-Gates 
-Number of gate arms
-GateConf 
-Gate configuration   1 = 2 Quad; 2 = 3 Quad; 3 = 4 Quad
-Whstban  
-Quiet Zone 0= none, 1= 24hr  2 = Partial 3 = Chicago Excused
-WdCode  
-Warning device code 1 = No signs or signals; 2 = Other signs or signals; 3 = Crossbucks; 4 = Stop signs; 5 = Special Active Warning Devices; 6 = Highway traffic signals, wigwags, bells, or other activated; 7 = Flashing lights; 8 = All other Gates; 9 = Four Quad (full barrier) Gates
-SpselIDs 
-Train Detection 0 = None 11 = Constant Warning Time 12 = Motion Detection 14 = Other 16 = AFO 17 = PTC 18 = DC
+| Field Names  | Values                                                                                                             |
+|--------------|--------------------------------------------------------------------------------------------------------------------|
+| Gates        | Number of gate arms                                                                                       |
+| Gate Conf    | 1 = 2 Quad; 2 = 3 Quad; 3 = 4 Quad                                                                                 |
+| Whstban      | Quiet Zone 0= none, 1= 24hr  2 = Partial 3 = Chicago Excused     |
+| WdCode       | Warning device code 1 = No signs or signals; 2 = Other signs or signals; 3 = Crossbucks; 4 = Stop signs; 5 = Special Active Warning Devices; 6 = Highway traffic signals, wigwags, bells, or other activated; 7 = Flashing lights; 8 = All other Gates; 9 = Four Quad (full barrier) Gates                                                                                                                |
+| SpselIDs     | Train Detection 0 = None 11 = Constant Warning Time 12 = Motion Detection 14 = Other 16 = AFO 17 = PTC 18 = DC      
 
 Step 6: Save in a csv text object and write text to file.
+
 Appendix A is the Python code in a Jupyter Notebook.  A source copy is available at … https://1drv.ms/u/s!AgsEoWikEEW_ntl8zQvKaZVNNhPW5g?e=QnwKjg.  This link requires that you have access to a Jupyter notebook.
 
-Other notes:
+## Other notes:
 - I found the API response to be rather slow and to take about 15 seconds per crossing.  Terminal window shows progress.
 - If you are new to Python, there is very little obscure code.  To extract other fields simply find the filed name and add it to the extracted field variables.  Formatting the variable 'token' was the only tricky part.  Since the token is assigned to me personally, I have changed it to a non-working value.  Simply replace it with your token.  
 - Each request has a 10-15 second cycle.  If you have many crossings, be sure to check your computer’s sleep and logoff settings.
-Summary of aggregated data
+## Summary of aggregated data
 Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities.  For the tables below At gates, 4-quad, and activation failures represent only in-vehicle fatalities.
 
 Crossing fatalities by year
