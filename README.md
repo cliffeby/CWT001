@@ -51,7 +51,7 @@ Step 5: Loop through the Id list calling the API and extracting the following fi
 
 Step 6: Save in a csv text object and write text to file.
 
-Appendix A is the Python code in a Jupyter Notebook.  A source copy is available at … https://1drv.ms/u/s!AgsEoWikEEW_ntl8zQvKaZVNNhPW5g?e=QnwKjg.  This link requires that you have access to a Jupyter notebook.
+Appendix A is the Python code in a Jupyter Notebook.  A source copy is available at … [https://1drv.ms/u/s!AgsEoWikEEW_ntl8zQvKaZVNNhPW5g?e=QnwKjg](https://1drv.ms/u/s!AgsEoWikEEW_ntl8zQvKaZVNNhPW5g?e=QnwKjg).  This link requires that you have access to a Jupyter notebook.
 
 ## Other notes:
 - I found the API response to be rather slow and to take about 15 seconds per crossing.  Terminal window shows progress.
