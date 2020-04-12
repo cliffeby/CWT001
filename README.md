@@ -60,49 +60,14 @@ Appendix A is the Python code in a Jupyter Notebook.  A source copy is available
 ## Summary of aggregated data
 Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities.  For the tables below At gates, 4-quad, and activation failures represent only in-vehicle fatalities.
 
-Crossing fatalities by year
-Year
-Fatalities
-Pedestrian
-In Vehicle
-At gates and in vehicle 
-4-quad and in vehicle
-Activation Failure
-2019
-329
-105
-224
-80
-1
-0
-2018
-300
-137
-163
-95
-5
-0
-2017
-309
-134
-175
-96
-0
-0
-2016
-300
-125
-175
-83
-1
-0
-2015
-287
-130
-157
-102
-5
-2
+### Crossing fatalities by year
+| Year | Fatalities | Pedestrian | In Vehice | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
+|------|------------|------------|-----------|-------------------------|------------------------|--------------------|
+| 2019 | 329        | 105        | 224       | 80                      | 1                      | 0                  |
+| 2018 | 300        | 137        | 163       | 95                      | 5                      | 0                  |
+| 2017 | 309        | 134        | 175       | 96                      | 0                      | 0                  |
+| 2016 | 300        | 125        | 175       | 83                      | 1                      | 0                  |
+| 2015 | 287        | 130        | 157       | 102                     | 5                      | 2                  |
 
 ## Observations
 Without adjusting for bias, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
@@ -110,32 +75,16 @@ To adjust for bias, we need to know the following:
 - Percentage of gated crossings to total by year
 - Percentage of 4-Quad crossings to total year
 
-With these adjustments, 
+With these adjustments, ....
 
-Year
-In Vehicle
-At gates and in vehicle 
-4-quad and in vehicle
-2019
-
-
-
-2018
-
-
-
-2017
-
-
-
-2016
-
-
-
-2015
-100
-
-
+### Adjusted crossing fatalities by year 2015 = 100
+| Year | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
+|------|------------|------------|-----------|-------------------------|------------------------|--------------------|
+| 2019 |                         |                        |                    |
+| 2018 |                         |                        |                    |
+| 2017 |                         |                        |                    |
+| 2016 |                         |                        |                    |
+| 2015 | 100                     |                        |                    |
 
 ## 4-Quad Observations
 The accident reports contain a narrative section and often describe known details of the accident and fatality.  For the five-year period and at 4-Quad gates, three fatalities were from vehicles stuck between the gates, two were from vehicles going under the gates, and one from vehicles entering under the exit gate.
@@ -189,8 +138,6 @@ Each request has a 10 to 15-second cycle.  If you have a large number of crossin
 Other respurces:
 Crossing Field/Metadata Definitions: https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings
 Crossing Accident Field Definitions: https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx
-
-
 
 
 
