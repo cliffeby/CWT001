@@ -14,8 +14,8 @@ To get current experience, FRA has an online database of accidents at crossings 
 
 Additionally, I wanted to know how many occurred at 4-quad gates and how many were in quiet zones and or had constant warning devices.   These data are not recorded in the accident report but are part of the crossing inventory.  FRA provides a tool to download a specific crossing’s data by its Id, but if you have a large list, it is a tedious process to enter and scan each report for the desired features.
 
-To automate the process, the FRA Developer website at https://safetydata.fra.dot.gov/MasterWebService/PublicApi has an API to access crossing inventory.  At present and from the samples offered, I found most of them limited in the number of crossings that could be returned in any one request.  The single crossing API worked well and returned a JSON object of all that crossing’s fields.
-To use the API, you need to have a free FRA account and a token.  https://safetydata.fra.dot.gov/MasterWebService/PublicApi/Tokens
+To automate the process, the FRA Developer website at [https://safetydata.fra.dot.gov/MasterWebService/PublicApi]:https://safetydata.fra.dot.gov/MasterWebService/PublicApi has an API to access crossing inventory.  At present and from the samples offered, I found most of them limited in the number of crossings that could be returned in any one request.  The single crossing API worked well and returned a JSON object of all that crossing’s fields.
+To use the API, you need to have a free FRA account and a token.  [https://safetydata.fra.dot.gov/MasterWebService/PublicApi/Tokens]:https://safetydata.fra.dot.gov/MasterWebService/PublicApi/Tokens
 
 For this specific task statement, I am querying the inventory database and looping through a list of crossings.  I extract these data for each:
 -	the number of gates,
