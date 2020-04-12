@@ -60,7 +60,7 @@ Appendix A is the Python code in a Jupyter Notebook.  A source copy is available
 ## Summary of aggregated data
 Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities.  For the tables below At gates, 4-quad, and activation failures represent only in-vehicle fatalities.
 
-### Crossing fatalities by year
+#### Crossing fatalities by year
 | Year | Fatalities | Pedestrian | In Vehice | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
 |------|------------|------------|-----------|-------------------------|------------------------|--------------------|
 | 2019 | 329        | 105        | 224       | 80                      | 1                      | 0                  |
@@ -77,7 +77,7 @@ To adjust for bias, we need to know the following:
 
 With these adjustments, ....
 
-### Adjusted crossing fatalities by year 2015 = 100
+#### Adjusted crossing fatalities by year 2015 = 100
 
 | Year | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
 |------|-------------------------|------------------------|--------------------|
@@ -92,9 +92,9 @@ The accident reports contain a narrative section and often describe known detail
 
 While not statistically significant, the 4-Quad data point to some known issues at these gates.  First is the use of median barriers.  If drivers are prevented from using the delayed exit gate as an access point, the safety of the gate is improved.  Unless constrained by road infrastructure, median gates should be required at 4-Quad gates.  Second is detection loops.  For these data it is unclear if the gates had functioning detection loops.  “Stuck between the gates” could simply mean the vehicle was between the two entrance gates.
 
-Third is the trade off in length of warning times and exit gate delays.  Considerable study has been given to exit gate behavior and design – among the design features are delays.  Typically exit gates are delayed by four to 10 seconds and contain detection loops to allow a vehicle to exit without being trapped.  The Illinois High-Speed Rail Four-Quadrant Gate Reliability Assessment is the most comprehensive recent study.  Due to high speed trains, Illinois increased the warning time to 80 seconds, well beyond the maximum recommended time.  With an 80-second warning time and when a vehicle detected in the crossing, a civil-speed restriction command can be issued to allow the high-speed train to stop if necessary.  The 80 seconds also gives a disoriented or panicked driver the ability to recover.
+Third is the trade off in length of warning times and exit gate delays.  Considerable study has been given to exit gate behavior and design – among the design features are delays.  Typically exit gates are delayed by four to 10 seconds and contain detection loops to allow a vehicle to exit without being trapped.  The Illinois High-Speed Rail Four-Quadrant Gate Reliability Assessment is the most comprehensive recent study.  Due to high speed trains, Illinois increased the warning time to 80 seconds, well beyond the maximum recommended time.  With an 80-second warning time and when a vehicle is detected in the crossing, a civil-speed restriction command can be issued to allow the high-speed train to stop if necessary.  The 80 seconds also gives a disoriented or panicked driver the ability to recover.
 
-Since detection loops fail particularly for bikers, a longer warning time and exit-gate delay would be worth consideration.
+Since loops often fail to detect all type of vhicles, a longer warning time and exit-gate delay would be worth consideration.
 
 ## Constant Warning Times
 Constant warning time devices are required at all 4-Quad gates, but none of the fatalities reported a failure of the CWT devices.  Nothing in these data point to constant warning times as a factor that affects crossing safety at 4-Quad gates.  The Illinois HSR approach to use 80 seconds contradicts traditional thinking that anything in excess of 60 seconds is a safety risk. 
