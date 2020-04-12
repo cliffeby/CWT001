@@ -61,6 +61,7 @@ Appendix A is the Python code in a Jupyter Notebook.  A source copy is available
 Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities.  For the tables below At gates, 4-quad, and activation failures represent only in-vehicle fatalities.
 
 #### Crossing fatalities by year
+
 | Year | Fatalities | Pedestrian | In Vehice | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
 |------|------------|------------|-----------|-------------------------|------------------------|--------------------|
 | 2019 | 329        | 105        | 224       | 80                      | 1                      | 0                  |
