@@ -8,7 +8,7 @@ In addition to the barrier arms, most 4-quad crossings have supplemental safety 
 The North Carolina sealed corridor report studied various improvements to crossings including the upgrade of 69 crossings to 4-quad gates. The Illinois High-Speed Rail Four-Quadrant Gate Reliability Assessment focused on adequate warning times and exit detection for high-speed operations.  Both studies confirmed the benefit of 4-quad gates and greater improvement with other supplemental safety measures to “seal” the crossing to drive arounds.  These studies were completed in 2009 with a relatively small number of 4-quad gates. 
 ## Data 
 To get current experience, FRA has an online database of accidents at crossings among other accident and fatality reports.  These data can be queried online by year, railroad, and other predefined filters.  When querying FRA’s Highway Crossing Accident Database, you can obtain a list of crossings that meet FRA preselected filter criteria.  Unfortunately, the query download page is limited in the extent of filtering allowed.  This limitation can often be overcome by exporting a larger set of results to a Excel file and then applying additional Excel filters to the data.  For my specific case, I was looking for fatalities involving highway vehicles at gated crossings.  After downloading all accidents for a specific year, I filtered the following fields:
--	TYPEVEH   # I excluded K – Pedestrians
+-	TYPEVEH   # I excluded K – Pedestrians and M -Bicycles
 -	SIGNAL   # Gates, I included entries 1-6 and excluded blanks
 -	TOTKLD # Casualties/Killed – I excluded 0
 
@@ -55,7 +55,7 @@ Appendix A is the Python code in a Jupyter Notebook.  A source copy is available
 
 ## Other notes:
 - I found the API response to be rather slow and to take about 15 seconds per crossing.  Terminal window shows progress.
-- If you are new to Python, there is very little obscure code.  To extract other fields simply find the filed name and add it to the extracted field variables.  Formatting the variable 'token' was the only tricky part.  Since the token is assigned to me personally, I have changed it to a non-working value.  Simply replace it with your token.  
+- If you are new to Python, there is very little obscure code.  To extract other fields simply find the field name and add it to the extracted field variables.  Formatting the variable 'token' was the only tricky part.  Since the token is assigned to me personally, I have changed it to a non-working value.  Simply replace it with your token.  
 - Each request has a 10-15 second cycle.  If you have many crossings, be sure to check your computer’s sleep and logoff settings.
 ## Summary of aggregated data
 Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities.  For the tables below At gates, 4-quad, and activation failures represent only in-vehicle fatalities.
@@ -78,8 +78,9 @@ To adjust for bias, we need to know the following:
 With these adjustments, ....
 
 ### Adjusted crossing fatalities by year 2015 = 100
+
 | Year | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
-|------|------------|------------|-----------|-------------------------|------------------------|--------------------|
+|------|-------------------------|------------------------|--------------------|
 | 2019 |                         |                        |                    |
 | 2018 |                         |                        |                    |
 | 2017 |                         |                        |                    |
@@ -107,7 +108,7 @@ Constant warning time devices are required at all 4-Quad gates, but none of the 
 
 
 
-# Appendix A
+# Appendix A - Jupyter Notebook Code
 
 ## Background and Instructions
 
@@ -193,19 +194,28 @@ with open(inputFile, newline='') as csvfile:
                 print("Oops!  No/bad data.  Next crossing")
         print("Finished")
 ```
-Output
+Expected Output
     725401E 1  of ?
     {'odata.metadata': 'https://safetydata.fra.dot.gov/MasterWebService/PublicApi/frads/v1/odata/gcis/$metadata#Crossings', 'value': [{'ReportBaseId': 4519050, 'MultipleFormsFiled': 0, 'ReportingAgencyId': 1622, 'ReportingAgencyTypeId': 1, 'RevisionDate': '2019-11-11T00:00:00', 'PostmarkDate': None, 'ReasonId': 14, 'CrossingId': '725401E', 'CrossingIdSuffix': 'NS', 'ReportStatus': 'Published', 'ReportType': 'Major', 'CreatedDate': None, 'CreatedBy': 'ENDCCrossings@nscorp.com', 'LastUpdatedDate': '0001-01-01T00:00:00', 'Railroad': 'NS', 'StateCD': '01', 'CntyCD': '01073', 'Nearest': '0', 'CityCD': '010730330', 'Street': '14TH ST', 'BlockNumb': '', 'Highway': 'SR 150', 'SepInd': '2', 'SepRr1': '', 'SepRr2': '', 'SepRr3': '', 'SepRr4': '', 'MultFrmsFiled': '2', 'SameInd': '1', 'SameRr1': 'ATK', 'SameRr2': ' ', 'SameRr3': ' ', 'SameRr4': ' ', 'RrID': '', 'Ttstn': '472600', 'TtstnNam': 'BIRMINGHAM', 'RrMain': '-1', 'XingOwnr': '-1', 'TypeXing': '3', 'XPurpose': '1', 'PosXing': '1', 'OpenPub': '', 'TypeTrnSrvcIDs': '11,12', 'DevelTypID': '13', 'XingAdj': '2', 'XngAdjNo': '', 'Whistban': '0', 'WhistDate': None, 'HscoRrid': '-1', 'Latitude': '33.3953043', 'Longitude': '-86.9548082', 'LLsource': '1', 'RrNarr1': '', 'RrNarr2': '', 'RrNarr3': '', 'RrNarr4': '', 'StNarr1': '', 'StNarr2': '', 'StNarr3': 'State Phone# updated - date updated: 2020-02-24', 'StNarr4': 'AGS', 'PolCont': '8009464744', 'RrCont': '8009464744', 'HwyCont': '3342426234', 'OperatingRailroadCode': 'NS', 'OperatingRailroadType': 'Primary', 'RrDiv': 'ALABAMA', 'RrSubDiv': 'AGS SOUTH', 'Branch': '#N\\A', 'PrfxMilePost': 'AG', 'MilePost': '0154.900', 'SfxMilePost': ' ', 'Lt1PassMov': '2', 'PassCnt': '2', 'DayThru': '20', 'NghtThru': 9.0, 'TotalSwt': 8.0, 'TotalLtr': 0.0, 'Lt1Mov': '2', 'WeekTrnMov': None, 'YearTrnMov': 2017.0, 'MaxTtSpd': '79', 'MinSpd': '50', 'MaxSpd': '79', 'MainTrk': '2', 'SidingTrk': '0', 'YardTrk': '0', 'TransitTrk': '0', 'IndustryTrk': '0', 'OthrTrk': '1', 'OthrTrkDes': 'IND', 'SpselIDs': '11', 'Sgnleqp': '1', 'EMonitorDvce': '2', 'HealthMonitor': '2', 'NoSigns': '1', 'XBuck': '0', 'StopStd': '0', 'YieldStd': '0', 'AdvWarn': '1,2,3,4,11,12', 'AdvW10_1': '2', 'AdvW10_2': '1', 'AdvW10_3': '0', 'AdvW10_4': '0', 'AdvW10_11': '0', 'AdvW10_12': '0', 'Low_Grnd': '2', 'Low_GrndSigns': '0', 'PaveMrkIDs': '1', 'Channel': '5', 'Exempt': '2', 'EnsSign': '1', 'OthSgn': '1', 'OthSgn1': '2', 'OthDes1': '45', 'OthSgn2': '0', 'OthDes2': '0', 'OthSgn3': '0', 'OthDes3': '', 'PrvxSign': ' ', 'Led': '', 'Gates': '2', 'GatePed': '0', 'GateConf': '1', 'FlashOv': '4', 'FlashNov': '0', 'CFlashType': '1', 'FlashPost': '0', 'FlashPostType': '0', 'Bkl_FlashPost': '2', 'Sdl_FlashPost': '2', 'FlashPai': '12', 'AwdIDate': '082009', 'AwhornChk': '2', 'AwhornlDate': '', 'HwyTrafSignl': '2', 'Wigwags': '0', 'Bells': '1', 'SpecPro': '0', 'FlashOth': '0', 'FlashOthDes': '', 'HwynrSig': '1', 'Intrprmp': '2', 'PrempType': '2', 'HwtrfPsig': '2', 'HwtrfPsigsdis': '0', 'HwtrfPsiglndis': '0', 'MonitorDev': '0', 'WdCode': '8', 'TraficLn': '5', 'TraflnType': '2', 'HwyPved': '1', 'Downst': '2', 'Illumina': '2', 'XSurfDate': None, 'XSurfWidth': '27', 'XSurfLength': '64', 'XSurfaceIDs': '13', 'XSurOthr': '', 'HwyNear': '1', 'HwynDist': '0', 'XAngle': '3', 'ComPower': '1', 'HwySys': '2', 'HwyClassCD': '1', 'HwyClassrdtpID': '13', 'StHwy1': '1', 'HwySpeed': '40', 'HwySpeedps': '1', 'LrsRouteid': None, 'LrsMilePost': None, 'Aadt': '19800', 'AadtYear': '2011', 'PctTruk': '5', 'SchlBusChk': '2', 'SchlBsCnt': '0', 'HazmtVeh': None, 'EmrgncySrvc': '1'}]}
+    
     725401E 2 1 0 8 11
+    
     749707C 2  of ?
+    
     749707C 2 1 0 8 0
+    
     050381C 3  of ?
     
     
 ## Appendix B Resources
-Crossing Field/Metadata Definitions: https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings 
-Crossing Accident Field Definitions:    https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx
+Crossing Field/Metadata Definitions: 
+https://safetydata.fra.dot.gov/MasterWebService/SecureAPI/Support/Datasets?ModelType=Crossings 
+
+Crossing Accident Field Definitions:    
+https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/downloadFStructure.aspx
+
 Activation Failure database
 https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/affp/AfBrowse.aspx
+
 Illinois High-Speed Rail
 Hellman, Adrian & Ngamdung, Tashi. (2010). Illinois High-Speed Rail Four-Quadrant Gate Reliability Assessment.
