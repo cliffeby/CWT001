@@ -43,11 +43,11 @@ Step 5: Loop through the Id list calling the API and extracting the following fi
 
 | Field Names  | Values                                                                                                             |
 |--------------|--------------------------------------------------------------------------------------------------------------------|
-| Gates        | Number of gate arms                                                                                       |
+| Gates        | Number of gate arms                                                                                                |
 | Gate Conf    | 1 = 2 Quad; 2 = 3 Quad; 3 = 4 Quad                                                                                 |
-| Whstban      | Quiet Zone 0= none, 1= 24hr  2 = Partial 3 = Chicago Excused     |
-| WdCode       | Warning device code 1 = No signs or signals; 2 = Other signs or signals; 3 = Crossbucks; 4 = Stop signs; 5 = Special Active Warning Devices; 6 = Highway traffic signals, wigwags, bells, or other activated; 7 = Flashing lights; 8 = All other Gates; 9 = Four Quad (full barrier) Gates                                                                                                                |
-| SpselIDs     | Train Detection 0 = None 11 = Constant Warning Time 12 = Motion Detection 14 = Other 16 = AFO 17 = PTC 18 = DC      
+| Whstban      | Quiet Zone 0= none, 1= 24hr  2 = Partial 3 = Chicago Excused                                                       |
+| WdCode       | Warning device code 1 = No signs or signals; 2 = Other signs or signals; 3 = Crossbucks; 4 = Stop signs; 5 = Special Active Warning Devices; 6 = Highway traffic signals, wigwags, bells, or other activated; 7 = Flashing lights; 8 = All other Gates; 9 = Four Quad (full barrier) Gates                                                                                                                                                                                                                                               |
+| SpselIDs     | Train Detection 0 = None 11 = Constant Warning Time 12 = Motion Detection 14 = Other 16 = AFO 17 = PTC 18 = DC     |     
 
 Step 6: Save in a csv text object and write text to file.
 
