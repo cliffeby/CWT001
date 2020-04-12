@@ -1,7 +1,8 @@
 ## Constant Warning Times
+## Part A - Accident Data Collections  
 ### Introduction
 This is the first in a possible series of essays on the general topic of constant warning time.  For the past several years, I’ve been working on a project that involved constant warning time devices used at 4-quad gates.  The project is generally focused on regulations and definitions in 49 CFR 234 and the referenced MUTCD.
-Prior to offering opinions on warning times, warning time devices, regulations, etc., the first task and subject of this effort is to gather data to assess the effectiveness of 4-quad gate in reducing accidents and fatalities.  I will summarize the results in the conclusion, but my primary purpose is to document an automated approach to retrieving data from FRA’s crossings and accidents databases.
+Prior to offering opinions on warning times, warning time devices, regulations, etc., the first task and subject of this effort is to gather data to assess the effectiveness of 4-quad gate in reducing accidents and fatalities.  I will summarize the results in the conclusion, but my primary purpose is to document an automated approach to retrieving data from FRA’s crossings, accidents, and activation failure databases.
 ## Background
 A 4-quad gate has at a minimum four barrier arms that block the entrance and exit approaches at a highway railroad grade crossing.  The purpose is to stop motorist from using the opposing traffic lane to bypass the gate and drive around a typical two-barrier gate on a two-lane road.  Unfortunately, this maneuver is frequently the cause of fatalities at gated crossings.  
 In addition to the barrier arms, most 4-quad crossings have supplemental safety features to discourage poor driver behavior.  Vehicle fatalities at 4-quad gates are as shown in the data below rare and are often deliberate actions of the vehicle operator.
