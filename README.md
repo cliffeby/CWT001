@@ -1,12 +1,16 @@
 ## Constant Warning Times
-## Part A - Accident Data Collections  
+
+## Part A - Accident Data Collections
+
 ### Introduction
 This is the first in a possible series of essays on the general topic of constant warning time.  For the past several years, I’ve been working on a project that involved constant warning time devices used at 4-quad gates.  The project is generally focused on regulations and definitions in 49 CFR 234 and the referenced MUTCD.
 Prior to offering opinions on warning times, warning time devices, regulations, etc., the first task and subject of this effort is to gather data to assess the effectiveness of 4-quad gate in reducing accidents and fatalities.  I will summarize the results in the conclusion, but my primary purpose is to document an automated approach to retrieving data from FRA’s crossings, accidents, and activation failure databases.
+
 ## Background
 A 4-quad gate has at a minimum four barrier arms that block the entrance and exit approaches at a highway railroad grade crossing.  The purpose is to stop motorist from using the opposing traffic lane to bypass the gate and drive around a typical two-barrier gate on a two-lane road.  Unfortunately, this maneuver is frequently the cause of fatalities at gated crossings.  
 In addition to the barrier arms, most 4-quad crossings have supplemental safety features to discourage poor driver behavior.  Vehicle fatalities at 4-quad gates are as shown in the data below rare and are often deliberate actions of the vehicle operator.
 The North Carolina sealed corridor report studied various improvements to crossings including the upgrade of 69 crossings to 4-quad gates. The Illinois High-Speed Rail Four-Quadrant Gate Reliability Assessment focused on adequate warning times and exit detection for high-speed operations.  Both studies confirmed the benefit of 4-quad gates and greater improvement with other supplemental safety measures to “seal” the crossing to drive arounds.  These studies were completed in 2009 with a relatively small number of 4-quad gates. 
+
 ## Data 
 To get current experience, FRA has an online database of accidents at crossings among other accident and fatality reports.  These data can be queried online by year, railroad, and other predefined filters.  When querying FRA’s Highway Crossing Accident Database, you can obtain a list of crossings that meet FRA preselected filter criteria.  Unfortunately, the query download page is limited in the extent of filtering allowed.  This limitation can often be overcome by exporting a larger set of results to a Excel file and then applying additional Excel filters to the data.  For my specific case, I was looking for fatalities involving highway vehicles at gated crossings.  After downloading all accidents for a specific year, I filtered the following fields:
 -	TYPEVEH   # I excluded K – Pedestrians and M -Bicycles
@@ -58,6 +62,7 @@ Appendix A is the Python code in a Jupyter Notebook.  A source copy is available
 - I found the API response to be rather slow and to take about 15 seconds per crossing.  Terminal window shows progress.
 - If you are new to Python, there is very little obscure code.  To extract other fields simply find the field name and add it to the extracted field variables.  Formatting the variable 'token' was the only tricky part.  Since the token is assigned to me personally, I have changed it to a non-working value.  Simply replace it with your token.  
 - Each request has a 10-15 second cycle.  If you have many crossings, be sure to check your computer’s sleep and logoff settings.
+
 ## Summary of aggregated data
 Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities.  For the tables below At gates, 4-quad, and activation failures represent only in-vehicle fatalities.
 
@@ -100,14 +105,6 @@ Since loops often fail to detect all type of vhicles, a longer warning time and 
 
 ## Constant Warning Times
 Constant warning time devices are required at all 4-Quad gates, but none of the fatalities reported a failure of the CWT devices.  Nothing in these data point to constant warning times as a factor that affects crossing safety at 4-Quad gates.  The Illinois HSR approach to use 80 seconds contradicts traditional thinking that anything in excess of 60 seconds is a safety risk. 
-
-
-
- 
- 
-
-
-
 
 
 # Appendix A - Jupyter Notebook Documentation
