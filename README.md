@@ -15,9 +15,9 @@ The North Carolina sealed corridor report studied various improvements to crossi
 
 ## Data 
 To get current experience, FRA has an online database of accidents at crossings among other accident and fatality reports.  These data can be queried online by year, railroad, and other predefined filters.  When querying FRA’s Highway Crossing Accident Database, you can obtain a list of crossings that meet FRA preselected filter criteria.  Unfortunately, the query download page is limited in the extent of filtering allowed.  This limitation can often be overcome by exporting a larger set of results to a Excel file and then applying additional Excel filters to the data.  For my specific case, I was looking for fatalities involving highway vehicles at gated crossings.  After downloading all accidents for a specific year, I filtered the following fields:
--	TYPEVEH   # I excluded K – Pedestrians and M -Bicycles
--	SIGNAL   # Gates, I included entries 1-6 and excluded blanks
--	TOTKLD # Casualties/Killed – I excluded 0
+-	TYPEVEH   ....# I excluded K – Pedestrians and M -Bicycles
+-	SIGNAL   ....# Gates, I included entries 1-6 and excluded blanks
+-	TOTKLD   ....# Casualties/Killed – I excluded 0
 
 Additionally, I wanted to know how many occurred at 4-quad gates and how many were in quiet zones and or had constant warning devices.   These data are not recorded in the accident report but are part of the crossing inventory.  FRA provides a tool to download a specific crossing’s data by its Id, but if you have a large list, it is a tedious process to enter and scan each report for the desired features.
 
@@ -66,7 +66,7 @@ Appendix A is the Python code in a Jupyter Notebook.  A source copy is available
 - Each request has a 10-15 second cycle.  If you have many crossings, be sure to check your computer’s sleep and logoff settings.
 
 ## Summary of aggregated data
-Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities.  For the tables below At gates, 4-quad, and activation failures represent only in-vehicle fatalities.
+Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalitiesthat occur at or very near the crossing.  Other tresppsaing fatalities are not reported in this database.  For the tables below "At gates", "4-quad", and "Aactivation Failures" represent only in-vehicle fatalities.
 
 #### Crossing fatalities by year
 
@@ -79,8 +79,8 @@ Trespassing/pedestrian fatalities can occur anywhere along the track.  The Cross
 | 2015 | 287        | 130        | 157       | 102                     | 5                      | 2                  |
 
 ## Observations
-Without adjusting for bias, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
-To adjust for bias, we need to know the following:
+Without noralizing for population counts, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
+To normalize, we need to know the following:
 - Percentage of gated crossings to total by year
 - Percentage of 4-Quad crossings to total year
 
@@ -97,7 +97,7 @@ With these adjustments, ....
 | 2015 | 100                     |                        |                    |
 
 ## 4-Quad Observations
-The accident reports contain a narrative section and often describe known details of the accident and fatality.  For the five-year period and at 4-Quad gates, three fatalities were from vehicles stuck between the gates, two were from vehicles going under the gates, and one from vehicles entering under the exit gate.
+The accident reports contain a narrative section and often describe known details of the accident and fatality.  For the five-year period and at 4-Quad gates, three fatalities were from vehicles stuck between the gates, two were from vehicles going through or under the gates, and one from vehicles entering under the exit gate.
 
 While not statistically significant, the 4-Quad data point to some known issues at these gates.  First is the use of median barriers.  If drivers are prevented from using the delayed exit gate as an access point, the safety of the gate is improved.  Unless constrained by road infrastructure, median gates should be required at 4-Quad gates.  Second is detection loops.  For these data it is unclear if the gates had functioning detection loops.  “Stuck between the gates” could simply mean the vehicle was between the two entrance gates.
 
