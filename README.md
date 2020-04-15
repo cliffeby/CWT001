@@ -82,18 +82,15 @@ Trespassing/pedestrian fatalities can occur anywhere along the track.  The Cross
 Without noralizing, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
 
 Ideally, normalization would address the vehicle exposure and and the incentive to create bad behavior e.g going around the gates.  Exposure could be approximated by the number of trains/activations per day and the daily traffic volumes.  Expected driver delay to wait for the train to clear could also be approximated based on the type of trains on that segemnt.  For an initial normailzation effort, I simply adjusted the number of gates in each category using year-end 2015 total crossings of 250625 as the base. 
-To normalize, we need to know the following:
-- Percentage of gated crossings to total by year
-- Percentage of 4-Quad crossings to total year
 
-Date	Total Crossings	Public, At-Grade Crossings
-		Total	Four Quad Gates	All Other Gates
-4/13/2020	     246,771 	         128,307 	          935 	       51,913 
-12/31/2019	     246,934 	         128,830 	          959 	       51,484 
-12/31/2018	     249,037 	         128,852 	          913 	       50,875 
-12/31/2017	     249,983 	         128,878 	          856 	       49,260 
-12/31/2016	     251,390 	         128,929 	          800 	       47,609 
-12/31/2015	     250,625 	         129,550 	          808 	       46,491 
+
+| Year | Total Crossings         | Public                 | Gated              |  4-Quad        |  
+|------|-------------------------|------------------------|--------------------|----------------|
+| 2019 |         246,934         |  128,830               |  52,443            |  959           |
+| 2018 |         249,037         |  128,852               |  51,788            |  913           |
+| 2017 |         249,983         |  128,878               |  50,166            |  856           |
+| 2016 |         251,390         |  128,929               |  48,409            |  800           |
+| 2015 |         250,390         |  129,550               |  47,299            |  808           |
 
 
 With these adjustments, ....
