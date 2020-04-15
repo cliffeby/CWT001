@@ -81,7 +81,7 @@ Trespassing/pedestrian fatalities can occur anywhere along the track.  The Cross
 ## Observations
 Without noralizing, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
 
-Ideally, normalization would address the vehicle exposure and and the incentive to create bad behavior e.g going around the gates.  Exposure could be approximated by the number of trains/activations per day and the daily traffic volumes.  Expected driver delay to wait for the train to clear could also be approximated based on the type of trains on that segemnt.  For an initial normailzation effort, I simply adjusted the number of gates in each category using year-end 2015 total crossings of 250625 as the base. 
+Ideally, normalization would address the vehicle exposure and and the incentive to create bad behavior e.g going around the gates.  Exposure could be approximated by the number of trains/activations per day and the daily traffic volumes.  Expected driver delay to wait for the train to clear could also be approximated based on the type of trains on that segemnt.  For an initial normailzation effort, I simply calculated the fatality rate per crossing ("at gate and in vehicle" fatalities divided by the year-end gated crossings).
 
 
 | Year | Total Crossings         | Public                 | Gated              |  4-Quad        |  
@@ -93,17 +93,7 @@ Ideally, normalization would address the vehicle exposure and and the incentive 
 | 2015 |         250,390         |  129,550               |  47,299            |  808           |
 
 
-With these adjustments, ....
-
-#### Adjusted crossing fatalities by year 2015 = 100
-
-| Year | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
-|------|-------------------------|------------------------|--------------------|
-| 2019 |                         |                        |                    |
-| 2018 |                         |                        |                    |
-| 2017 |                         |                        |                    |
-| 2016 |                         |                        |                    |
-| 2015 | 100                     |                        |                    |
+That average annual fatality rate at all gated crossings of 1.4 per 1000 crossings sheds a different light on the effectiveness of 4-Quad gates.  It is expected that improving the normalization techniques would benefit the effectiveness measure of 4-Quad gates. 
 
 ## 4-Quad Observations
 The accident reports contain a narrative section and often describe known details of the accident and fatality.  For the five-year period and at 4-Quad gates, three fatalities were from vehicles stuck between the gates, two were from vehicles going through or under the gates, and one from vehicles entering under the exit gate.
