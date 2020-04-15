@@ -107,6 +107,12 @@ Since loops often fail to detect all type of vhicles, a longer warning time and 
 ## Constant Warning Times
 Constant warning time devices are required at all 4-Quad gates, but none of the fatalities reported a failure of the CWT devices.  Nothing in these data point to constant warning times as a factor that affects crossing safety at 4-Quad gates.  The Illinois HSR approach to use 80 seconds contradicts traditional thinking that anything in excess of 60 seconds is a safety risk. 
 
+### About Me
+I am a former FRA Acting and Deputy Administrator and retired civil engineer.  I work as rail and data consultant for several companies on a part-time basis.  I also study software development as an avocation.
+
+Cliff Eby
+April 2020
+
 
 # Appendix A - Jupyter Notebook Documentation
 
