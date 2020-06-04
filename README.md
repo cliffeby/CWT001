@@ -79,7 +79,7 @@ Trespassing/pedestrian fatalities can occur anywhere along the track.  The Cross
 | 2015 | 287        | 130        | 157       | 102                     | 5                      | 2                  |
 
 ## Observations
-Without noralizing, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
+Without normalizing, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
 
 Ideally, normalization would address the vehicle exposure and and the incentive to create bad behavior e.g going around the gates.  Exposure could be approximated by the number of trains/activations per day and the daily traffic volumes.  Expected driver delay to wait for the train to clear could also be approximated based on the type of trains on that segemnt.  For an initial normailzation effort, I simply calculated the fatality rate per crossing ("at gate and in vehicle" fatalities divided by the year-end gated crossings).
 
