@@ -66,7 +66,7 @@ Appendix A is the Python code in a Jupyter Notebook.  A source copy is available
 - Each request has a 10-15 second cycle.  If you have many crossings, be sure to check your computer’s sleep and logoff settings.
 
 ## Summary of aggregated data
-Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalitiesthat occur at or very near the crossing.  Other tresppsaing fatalities are not reported in this database.  For the tables below "At gates", "4-quad", and "Aactivation Failures" represent only in-vehicle fatalities.
+Trespassing/pedestrian fatalities can occur anywhere along the track.  The Crossing Accident database reports both pedestrian and in-vehicle fatalities that occur at or very near the crossing.  Other tresppsaing fatalities are not reported in this database.  For the tables below "At gates", "4-quad", and "Aactivation Failures" represent only in-vehicle fatalities.
 
 #### Crossing fatalities by year
 
@@ -81,7 +81,7 @@ Trespassing/pedestrian fatalities can occur anywhere along the track.  The Cross
 ## Observations
 Without normalizing, it appears that gates and in particular 4-Quad gates are very effective in reducing fatalities at crossings.  Activation Failures, irrespective of type, are not a significant cause of fatalities.  Pedestrian deaths at crossings are significant.
 
-Ideally, normalization would address the vehicle exposure and and the incentive to create bad behavior e.g going around the gates.  Exposure could be approximated by the number of trains/activations per day and the daily traffic volumes.  Expected driver delay to wait for the train to clear could also be approximated based on the type of trains on that segment.  For an initial normailzation effort, I simply calculated the fatality rate per crossing ("at gate and in vehicle" fatalities divided by the year-end gated crossings).
+Ideally, normalization would address the vehicle exposure and and the incentive to create bad behavior e.g. going around the gates.  Exposure could be approximated by the number of trains/activations per day and the daily traffic volumes.  Expected driver delay to wait for the train to clear could also be approximated based on the type of trains on that segment.  For an initial normailzation effort, I simply calculated the fatality rate per crossing ("at gate and in vehicle" fatalities divided by the year-end gated crossings).
 
 
 | Year | Total Crossings         | Public                 | Gated              |  4-Quad        |  
