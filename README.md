@@ -70,7 +70,7 @@ Trespassing/pedestrian fatalities can occur anywhere along the track.  The Cross
 
 #### Crossing fatalities by year
 
-| Year | Fatalities | Pedestrian | In Vehice | At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
+| Year | Fatalities | Pedestrian | In Vehicle| At gates and in vehicle | 4-Quad and  in vehicle | Activation Failure |
 |------|------------|------------|-----------|-------------------------|------------------------|--------------------|
 | 2019 | 329        | 105        | 224       | 80                      | 1                      | 0                  |
 | 2018 | 300        | 137        | 163       | 95                      | 5                      | 0                  |
